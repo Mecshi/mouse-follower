@@ -30,6 +30,11 @@ const FollowMouse = () => {
     }
   }, [enabled])
 
+  /* En useEffect, existen 3 dependencias:
+      [] --> solo se ejecuta una vez cuando se monta el componente
+      [enabled, ...] --> ejecuta cuando cambia enabled y se monta el componente
+      undefined --> se ejecuta cada vez que se renderiza el componente
+  */
   return (
 
     <>
